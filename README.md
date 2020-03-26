@@ -107,14 +107,4 @@ Also, make sure you use a secure connection (i.e. https) to protect your usernam
 In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
- * 2015-05-25   v1.0.1   Fix callback parameters.
- * 2015-05-25   v1.0.0   Fork to switch support to gulp. Require external TODO parser.
- * 2015-03-20   v0.3.1   Maintenance release.  
- * 2015-02-09   v0.3.0   Added `allowedIssueTypes` option.  
- * 2015-02-05   v0.2.1   Maintenance release.  
- * 2014-12-22   v0.2.0   Added `issueRequired` option and JSX support.  
- * 2014-11-28   v0.1.4   Maintenance release.  
- * 2014-10-02   v0.1.3   Improved regex and bumped dependency versions.  
- * 2014-04-24   v0.1.2   Improved error handling for configuration and source code documentation.  
- * 2014-04-22   v0.1.1   Fixed minor issues with the README and Grunt tasks, changelog added.  
- * 2014-04-19   v0.1.0   Initial release.  
+See [Changelog.md](./Changelog.md)
