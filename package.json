@@ -1,7 +1,7 @@
 {
   "name": "gulp-jira-todo",
   "description": "Check statuses of TODOs referencing Jira tasks.",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "homepage": "https://github.com/pharb/gulp-jira-todo",
   "author": {
     "name": "Patrick H.",

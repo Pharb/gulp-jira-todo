@@ -1,5 +1,10 @@
 # Changelog
 
+#### v2.0.0 (2020-03-26)
+ - Major upgrade and change in dependencies
+ 
+Thanks a lot to Simon for the contribution #2
+
 #### v1.0.1 (2015-05-25)
  - Fix callback parameters
  
