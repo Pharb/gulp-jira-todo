@@ -104,7 +104,9 @@ For help, please read this: https://help.github.com/articles/remove-sensitive-da
 Also, make sure you use a secure connection (i.e. https) to protect your username and password.  
 
 ## Contributing
-In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+In lieu of a formal style guide, take care to maintain the existing coding style.
+Add unit tests for any new or changed functionality.
+Lint and test your code using `npm run lint` and `npm test`.
 
 ## Release History
 See [Changelog.md](./Changelog.md)
