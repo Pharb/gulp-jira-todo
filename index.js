@@ -80,27 +80,31 @@ module.exports = function (options) {
             };
         });
 
-        gjt.processTODOs(todos, function (problems) {
-            problems.forEach(function (problem) {
-                if (problem.kind === 'statusForbidden') {
-                    util.throwPluginError(
-                        'File "' + problem.issue.file + '" has a todo for issue ' + problem.issue.key +
-                        ' in line ' + problem.issue.line + ' (issue status: "' + problem.status.statusName + '").'
-                    );
-                } else if (problem.kind === 'withoutTicket' && options.issueRequired) {
-                    util.throwPluginError(
-                        'File "' + problem.issue.file + '" has a todo without a specified issue in line ' +
-                        '' +  problem.issue.line + '.'
-                    );
-                } else if (problem.kind === 'typeForbidden') {
-                    util.throwPluginError(
-                        'File "' + problem.issue.file + '" has a todo for an issue of disallowed type ' +
-                        '"' + problem.status.typeName + '" in line: ' + problem.issue.line + '.'
-                    );
-                }
-            });
+        gjt.processTODOs(todos)
+            .then(function (problems) {
+                problems.forEach(function (problem) {
+                    if (problem.kind === 'statusForbidden') {
+                        util.throwPluginError(
+                            'File "' + problem.issue.file + '" has a todo for issue ' + problem.issue.key +
+                            ' in line ' + problem.issue.line + ' (issue status: "' + problem.status.statusName + '").'
+                        );
+                    } else if (problem.kind === 'withoutTicket' && options.issueRequired) {
+                        util.throwPluginError(
+                            'File "' + problem.issue.file + '" has a todo without a specified issue in line ' +
+                            '' +  problem.issue.line + '.'
+                        );
+                    } else if (problem.kind === 'typeForbidden') {
+                        util.throwPluginError(
+                            'File "' + problem.issue.file + '" has a todo for an issue of disallowed type ' +
+                            '"' + problem.status.typeName + '" in line: ' + problem.issue.line + '.'
+                        );
+                    }
+                });
 
-            cb(null, input);
-        });
+                cb(null, input);
+            })
+            .catch(function (err) {
+                cb(err, input);
+            });
     });
 };
