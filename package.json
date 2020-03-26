@@ -26,7 +26,7 @@
   },
   "scripts": {
     "test": "jest --silent test",
-    "jshint": "jshint index.js lib test"
+    "lint": "jshint index.js lib test"
   },
   "dependencies": {
     "async": "^3.2.0",
