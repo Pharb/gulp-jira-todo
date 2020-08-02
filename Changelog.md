@@ -1,5 +1,8 @@
 # Changelog
 
+#### v2.0.1 (2020-08-03)
+ - Upgrade dev dependencies
+
 #### v2.0.0 (2020-03-26)
  - Major upgrade and change in dependencies
  
