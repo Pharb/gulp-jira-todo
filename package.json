@@ -33,7 +33,7 @@
   "devDependencies": {
     "jshint": "^2.11.0",
     "jest": "^26.0.1",
-    "jest-circus": "^26.0.1",
+    "jest-circus": "^27.0.6",
     "nock": "^13.0.3",
     "through2": "^4.0.2"
   },
